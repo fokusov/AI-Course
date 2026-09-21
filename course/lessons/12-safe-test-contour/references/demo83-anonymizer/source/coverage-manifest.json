@@ -1,0 +1,17 @@
+{
+  "configuration": "ДемонстрационноеПриложение",
+  "configuration_version": "1.0.41.3",
+  "platform_version": "8.3.27.2074",
+  "policy": "closed_allowlist_canary_only",
+  "targets": [
+    {"class":"Catalog.Контрагенты","selector":"Код = AICANARY","fields":["Наименование","Индекс","Страна","Город","Улица","Дом","Телефон","ЭлектроннаяПочта","Факс","ВебСайт","ДополнительнаяИнформация","КонтактноеЛицо","Широта","Долгота"],"action":"REPLACE","history":"NOT_COVERED"},
+    {"class":"Catalog.Организации","selector":"Код = AICANARY","fields":["Наименование"],"action":"REPLACE","history":"NOT_COVERED"},
+    {"class":"Catalog.Банки","selector":"Код = AICANARY","fields":["Наименование"],"action":"REPLACE","history":"NOT_COVERED"},
+    {"class":"Catalog.РасчетныеСчетаКонтрагентов","selector":"Код = AICANARY","fields":["Наименование","Номер"],"action":"REPLACE","history":"NOT_COVERED"},
+    {"class":"Catalog.Пользователи","selector":"Код = AICANARY","fields":["Наименование"],"action":"REPLACE","history":"NOT_COVERED"},
+    {"class":"Catalog.ВходящиеПисьма","selector":"Наименование = AICANARY","fields":["Отправитель","Текст","Идентификатор","ПочтовыйЯщик"],"action":"CLEAR","history":"NOT_COVERED"},
+    {"class":"Catalog.ИсходящиеПисьма","selector":"Наименование = AICANARY","fields":["Текст","Содержимое","Получатели.ЭлектроннаяПочта"],"action":"CLEAR","history":"NOT_COVERED","preserve":["Контрагент"]},
+    {"class":"Catalog.ХранимыеФайлы","selector":"Код = AICANARY","fields":["ДанныеФайла","Подпись","ИмяФайла","ДляОписания","Подписан","Зашифрован"],"action":"CLEAR_OR_REPLACE","history":"NOT_COVERED"}
+  ],
+  "blocked_scope":["all non-canary records","history","integration constants","documents","registers","registration log","backups","dt dumps","technical and external files","unsupported storages"]
+}

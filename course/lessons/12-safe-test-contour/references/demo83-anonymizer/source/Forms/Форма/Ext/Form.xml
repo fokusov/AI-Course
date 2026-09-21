@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>ТОЛЬКО DEMO83 1.0.41.3 / ТОЛЬКО ОТДЕЛЬНАЯ УЧЕБНАЯ КОПИЯ</v8:content>
+		</v8:item>
+	</Title>
+	<Width>110</Width>
+	<Height>38</Height>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Предупреждение" id="1">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТОЛЬКО ОТДЕЛЬНАЯ КОПИЯ. ОТКАТА НЕТ. РЕЗУЛЬТАТ НЕ ЯВЛЯЕТСЯ ЮРИДИЧЕСКИМ ОБЕЗЛИЧИВАНИЕМ.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПредупреждениеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПредупреждениеРасширеннаяПодсказка" id="3"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаПодтверждений" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подтверждения</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ShowTitle>true</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодтвержденийРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<CheckBoxField name="РаботаюСОтдельнойКопиейПоле" id="6">
+					<DataPath>РаботаюСОтдельнойКопией</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Работаю с отдельной копией</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РаботаюСОтдельнойКопиейПолеКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="РаботаюСОтдельнойКопиейПолеРасширеннаяПодсказка" id="8"/>
+				</CheckBoxField>
+				<InputField name="ФразаЗапускаПоле" id="9">
+					<DataPath>ФразаЗапуска</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фраза запуска</v8:content>
+						</v8:item>
+					</Title>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОБЕЗЛИЧИТЬ DEMO83</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ФразаЗапускаПолеКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ФразаЗапускаПолеРасширеннаяПодсказка" id="11"/>
+				</InputField>
+				<InputField name="ФразаCanaryПоле" id="12">
+					<DataPath>ФразаCanary</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фраза подготовки учебных данных</v8:content>
+						</v8:item>
+					</Title>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СОЗДАТЬ CANARY DEMO83</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ФразаCanaryПолеКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ФразаCanaryПолеРасширеннаяПодсказка" id="14"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаПлана" id="15">
+			<DataPath>План</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<CommandBarLocation>None</CommandBarLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаПланаКонтекстноеМеню" id="16"/>
+			<AutoCommandBar name="ТаблицаПланаКоманднаяПанель" id="17"/>
+			<ExtendedTooltip name="ТаблицаПланаРасширеннаяПодсказка" id="18"/>
+			<SearchStringAddition name="ТаблицаПланаСтрокаПоиска" id="19">
+				<AdditionSource>
+					<Item>ТаблицаПлана</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПланаСтрокаПоискаКонтекстноеМеню" id="20"/>
+				<ExtendedTooltip name="ТаблицаПланаСтрокаПоискаРасширеннаяПодсказка" id="21"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаПланаСостояниеПросмотра" id="22">
+				<AdditionSource>
+					<Item>ТаблицаПлана</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПланаСостояниеПросмотраКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="ТаблицаПланаСостояниеПросмотраРасширеннаяПодсказка" id="24"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаПланаУправлениеПоиском" id="25">
+				<AdditionSource>
+					<Item>ТаблицаПлана</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПланаУправлениеПоискомКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="ТаблицаПланаУправлениеПоискомРасширеннаяПодсказка" id="27"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="КодСтадии" id="28">
+					<DataPath>План.stage_code</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стадия</v8:content>
+						</v8:item>
+					</Title>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="КодСтадииКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="КодСтадииРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<InputField name="СтатусСтадии" id="31">
+					<DataPath>План.status</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="СтатусСтадииКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="СтатусСтадииРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="ОстаточныйРиск" id="34">
+					<DataPath>План.residual_risk</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остаточный риск</v8:content>
+						</v8:item>
+					</Title>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ОстаточныйРискКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ОстаточныйРискРасширеннаяПодсказка" id="36"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="ОтчетПоле" id="37">
+			<DataPath>Отчет</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Безопасный результат и остаточные риски</v8:content>
+				</v8:item>
+			</Title>
+			<ReadOnly>true</ReadOnly>
+			<MultiLine>true</MultiLine>
+			<Height>6</Height>
+			<ContextMenu name="ОтчетПолеКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ОтчетПолеРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<UsualGroup name="ГруппаКоманд" id="40">
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаКомандРасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<Button name="СформироватьПланКнопка" id="42">
+					<CommandName>Form.Command.СформироватьПлан</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сформировать план</v8:content>
+						</v8:item>
+					</Title>
+					<DefaultButton>true</DefaultButton>
+					<ExtendedTooltip name="СформироватьПланКнопкаРасширеннаяПодсказка" id="43"/>
+				</Button>
+				<Button name="ПодготовитьУчебныеДанныеКнопка" id="44">
+					<CommandName>Form.Command.ПодготовитьУчебныеДанные</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подготовить учебные данные</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПодготовитьУчебныеДанныеКнопкаРасширеннаяПодсказка" id="45"/>
+				</Button>
+				<Button name="ВыполнитьКнопка" id="46">
+					<CommandName>Form.Command.Выполнить</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обезличить canary</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ВыполнитьКнопкаРасширеннаяПодсказка" id="47"/>
+				</Button>
+				<Button name="ПроверитьРезультатКнопка" id="48">
+					<CommandName>Form.Command.ПроверитьРезультат</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверить результат</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПроверитьРезультатКнопкаРасширеннаяПодсказка" id="49"/>
+				</Button>
+				<Button name="СохранитьОтчетКнопка" id="50">
+					<CommandName>Form.Command.СохранитьОтчет</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показать отчёт</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СохранитьОтчетКнопкаРасширеннаяПодсказка" id="51"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="52">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.AI_АнонимизацияDemo83</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="РаботаюСОтдельнойКопией" id="53">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ФразаЗапуска" id="54">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФразаCanary" id="55">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Отчет" id="56">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="План" id="57">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="stage_code" id="58">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="status" id="59">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="residual_risk" id="60">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СформироватьПлан" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать план</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СформироватьПлан</Action>
+		</Command>
+		<Command name="ПодготовитьУчебныеДанные" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подготовить учебные данные</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПодготовитьУчебныеДанные</Action>
+		</Command>
+		<Command name="Выполнить" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обезличить canary</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыполнитьОбработку</Action>
+		</Command>
+		<Command name="ПроверитьРезультат" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить результат</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПроверитьРезультат</Action>
+		</Command>
+		<Command name="СохранитьОтчет" id="65">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать отчёт</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СохранитьОтчет</Action>
+		</Command>
+	</Commands>
+</Form>

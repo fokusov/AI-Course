@@ -1,0 +1,18 @@
+# Local working area and generated learner evidence
+.work/
+/Evidence/
+/Baselines/
+
+# Private author materials; never publish with the student course
+/docs/author/
+
+# Local 1C infobases and backups
+1Cv8.1CD
+*.dt
+*.bak
+
+# Transient output
+*.log
+*.tmp
+Thumbs.db
+.DS_Store

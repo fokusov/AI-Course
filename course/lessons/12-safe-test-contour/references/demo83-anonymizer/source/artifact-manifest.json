@@ -1,0 +1,26 @@
+{
+  "artifact": "AI_АнонимизацияDemo83.epf",
+  "source_set": "external-processors",
+  "delivery_status": "CANARY_BUILT_AND_RUNTIME_VERIFIED",
+  "gates": {
+    "static_xml": "PASS",
+    "form_validate": "PASS_UNICA_13_CHECKS",
+    "bsl_diagnostics": "BLOCKED_EXTERNAL_SOURCESET_PROFILE_UNSUPPORTED",
+    "native_build": "PASS_PLATFORM_8_3_27_2074",
+    "round_trip": "PASS_BSL_NORMALIZED_AND_FORM_VALIDATED",
+    "native_load_open": "PASS_EXACT_SHA256_EXIT_0",
+    "behavior": "PASS_CANARY_PREPARE_RUN_VERIFY_AND_INDEPENDENT_VERIFY"
+  },
+  "known_incomplete": [
+    "full-database anonymization is not released",
+    "history, integration constants, documents, registers and logs are not changed",
+    "backups, dt dumps, external files and other technical artifacts remain outside coverage"
+  ],
+  "built_artifact": {
+    "path": ".build/external-anonymizer/AI_АнонимизацияDemo83.epf",
+    "bytes": 13329,
+    "sha256": "8753D70AE1713CF47E4B29CB98EDD33E1813134D5D84BAAC1A356FE027D5184D"
+  },
+  "publishable_scope": "CANARY_ONLY",
+  "full_anonymizer_status": "BLOCKED_FULL_RUN_NOT_RELEASED"
+}
