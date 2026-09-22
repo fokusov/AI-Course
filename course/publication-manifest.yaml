@@ -6,6 +6,8 @@ route: /ru/courses/ai-for-1c/
 publicFiles:
   - index.md
   - getting-started/lesson.md
+  - getting-started/codex-basics.md
+  - getting-started/agents-md.md
   - quickstarts/codex/lesson.md
   - quickstarts/unica/lesson.md
   - lessons/00-chat-start/lesson.md
