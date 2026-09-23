@@ -3,69 +3,27 @@ courseId: ai-for-1c
 locale: ru
 route: /ru/courses/ai-for-1c/
 
+# Единственный публичный маршрут. Прежние уроки сохранены в Git как материал
+# автора и не входят в текущую публикационную подборку.
 publicFiles:
   - index.md
   - getting-started/lesson.md
+  - getting-started/demo83-lab.md
   - getting-started/codex-basics.md
   - getting-started/agents-md.md
   - quickstarts/codex/lesson.md
   - quickstarts/unica/lesson.md
-  - lessons/00-chat-start/lesson.md
-  - lessons/01-demo83-chat/lesson.md
-  - lessons/02-demo83-lab/lesson.md
+  - lessons/00-first-chat/lesson.md
+  - lessons/01-safety-and-route/lesson.md
+  - lessons/01-safety-and-route/references/prepared-copy-gate.md
+  - lessons/02-first-investigation/lesson.md
   - lessons/02-demo83-lab/references/demo83-inventory.md
-  - lessons/03-specification/lesson.md
-  - lessons/03-specification/references/order-state-case.md
-  - lessons/04-controlled-change/lesson.md
-  - lessons/05-runtime-acceptance/lesson.md
-  - lessons/05-runtime-acceptance/references/runtime-result.md
-  - lessons/06-agent-code-review/lesson.md
-  - lessons/06-agent-code-review/references/review-pack.md
-  - lessons/07-agent-diagnostics/lesson.md
-  - lessons/07-agent-diagnostics/references/01-symptom.md
-  - lessons/07-agent-diagnostics/references/02-environment-and-static.md
-  - lessons/07-agent-diagnostics/references/03-runtime-observation.md
-  - lessons/07-agent-diagnostics/references/04-change-diff.md
-  - lessons/08-automated-tests/lesson.md
-  - lessons/08-automated-tests/references/official-sources.md
-  - lessons/08-automated-tests/references/yaxunit-smoke.bsl
-  - lessons/08-automated-tests/references/vanessa-smoke.feature
-  - lessons/08-automated-tests/references/test-plan.md
-  - lessons/09-fulfillment-design/lesson.md
-  - lessons/09-fulfillment-design/references/scope-change.md
-  - lessons/09-fulfillment-design/references/current-state-checklist.md
-  - lessons/09-fulfillment-design/references/spec-template.md
-  - lessons/09-fulfillment-design/references/acceptance-matrix.md
-  - lessons/10-fulfillment-implementation/lesson.md
-  - lessons/10-fulfillment-implementation/references/implementation-checkpoints.md
-  - lessons/10-fulfillment-implementation/references/test-matrix.md
-  - lessons/10-fulfillment-implementation/references/concurrency-pilot.md
-  - lessons/10-fulfillment-implementation/references/acceptance-template.md
-  - lessons/11-data-threat-model/lesson.md
-  - lessons/11-data-threat-model/references/data-passport-template.md
-  - lessons/11-data-threat-model/references/threat-model-template.md
-  - lessons/11-data-threat-model/references/transformation-rules.example.yaml
-  - lessons/11-data-threat-model/references/privacy-test-cases.md
-  - lessons/11-data-threat-model/references/official-sources.md
-  - lessons/12-safe-test-contour/lesson.md
-  - lessons/12-safe-test-contour/references/contour-decision-template.md
-  - lessons/12-safe-test-contour/references/synthetic-dataset-plan.md
-  - lessons/12-safe-test-contour/references/runbook-template.md
-  - lessons/12-safe-test-contour/references/privacy-gate-template.md
-  - lessons/12-safe-test-contour/references/residual-risk-template.md
-  - lessons/12-safe-test-contour/references/privacy-scan-rules.example.json
-  - lessons/12-safe-test-contour/references/Test-OutboundArtifacts.ps1
-  - lessons/12-safe-test-contour/references/clean-machine-pilot.md
-  - lessons/12-safe-test-contour/references/demo83-anonymizer.md
-  - lessons/12-safe-test-contour/references/demo83-anonymizer/AI_АнонимизацияDemo83.epf
-  - lessons/12-safe-test-contour/references/demo83-anonymizer/source/README.md
-  - lessons/12-safe-test-contour/references/demo83-anonymizer/source/artifact-manifest.json
-  - lessons/12-safe-test-contour/references/demo83-anonymizer/source/coverage-manifest.json
-  - lessons/12-safe-test-contour/references/demo83-anonymizer/source/form-definition.json
-  - lessons/12-safe-test-contour/references/demo83-anonymizer/source/Ext/ObjectModule.bsl
-  - lessons/12-safe-test-contour/references/demo83-anonymizer/source/Forms/Форма.xml
-  - lessons/12-safe-test-contour/references/demo83-anonymizer/source/Forms/Форма/Ext/Form.xml
-  - lessons/12-safe-test-contour/references/demo83-anonymizer/source/Forms/Форма/Ext/Form/Module.bsl
+  - lessons/03-report-from-zero/lesson.md
+  - lessons/03-report-from-zero/references/fixture-and-rubric.md
+  - lessons/04-unf-extension/lesson.md
+  - lessons/05-unf-document/lesson.md
+  - lessons/06-price-import/lesson.md
+  - lessons/07-http-api/lesson.md
 
 excludedPatterns:
   - "**/instructor.md"
