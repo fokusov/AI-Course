@@ -24,7 +24,8 @@ publicFiles:
   - lessons/04-unf-extension/lesson.md
   - lessons/05-price-import/lesson.md
   - lessons/06-http-api/lesson.md
-  - lessons/07-sdd-bsl-flow/lesson.md
+  - lessons/07-sdd-manual/lesson.md
+  - lessons/08-bsl-flow/lesson.md
 
 excludedPatterns:
   - "**/instructor.md"
