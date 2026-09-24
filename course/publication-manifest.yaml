@@ -21,9 +21,9 @@ publicFiles:
   - lessons/03-report-from-zero/lesson.md
   - lessons/03-report-from-zero/references/fixture-and-rubric.md
   - lessons/04-unf-extension/lesson.md
-  - lessons/05-unf-document/lesson.md
-  - lessons/06-price-import/lesson.md
-  - lessons/07-http-api/lesson.md
+  - lessons/05-price-import/lesson.md
+  - lessons/06-http-api/lesson.md
+  - lessons/07-sdd-bsl-flow/lesson.md
 
 excludedPatterns:
   - "**/instructor.md"
