@@ -3,8 +3,7 @@ courseId: ai-for-1c
 locale: ru
 route: /ru/courses/ai-for-1c/
 
-# Единственный публичный маршрут. Прежние уроки сохранены в Git как материал
-# автора и не входят в текущую публикационную подборку.
+# Единственный публичный маршрут. Прежние редакции доступны в истории Git.
 publicFiles:
   - index.md
   - getting-started/lesson.md
@@ -18,7 +17,7 @@ publicFiles:
   - lessons/01-safety-and-route/lesson.md
   - lessons/01-safety-and-route/references/prepared-copy-gate.md
   - lessons/02-first-investigation/lesson.md
-  - lessons/02-demo83-lab/references/demo83-inventory.md
+  - lessons/02-first-investigation/references/demo83-inventory.md
   - lessons/03-report-from-zero/lesson.md
   - lessons/03-report-from-zero/references/fixture-and-rubric.md
   - lessons/04-unf-extension/lesson.md
