@@ -1,0 +1,34 @@
+version: 1
+courseId: advanced-ai-for-1c
+locale: ru
+route: /ru/courses/advanced-ai-for-1c/
+
+# Пути относительно advanced-course/. README.md — главная страница курса.
+# Разрешение публикации текстов не означает готовность практического стенда.
+publicFiles:
+  - README.md
+  - program.md
+  - factory.md
+  - practice.md
+  - accounting-contract.md
+  - lessons/01-substitute-shipment/lesson.md
+  - lessons/01-substitute-shipment/rules.md
+  - lessons/01-substitute-shipment/fixtures.md
+  - lessons/02-kit-assembly/lesson.md
+  - lessons/02-kit-assembly/rules.md
+  - lessons/02-kit-assembly/fixtures.md
+  - lessons/03-last-item-race/lesson.md
+  - lessons/03-last-item-race/scenarios.md
+  - lab.md
+  - sources.md
+
+excludedPatterns:
+  - "**/instructor.md"
+  - "../docs/author/**"
+  - "../.work/**"
+  - "../output/**"
+  - "**/*.dt"
+  - "**/*.1CD"
+  - "**/*.bak"
+  - "pdf-manifest.json"
+  - "publication-manifest.yaml"
