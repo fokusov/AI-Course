@@ -20,6 +20,7 @@
   ],
   "externalDocuments": {
     "course/index.md": "https://github.com/fokusov/AI-Course/blob/main/course/index.md",
-    "course/getting-started/lesson.md": "https://github.com/fokusov/AI-Course/blob/main/course/getting-started/lesson.md"
+    "course/getting-started/lesson.md": "https://github.com/fokusov/AI-Course/blob/main/course/getting-started/lesson.md",
+    "course/lessons/08-bsl-flow/lesson.md": "https://github.com/fokusov/AI-Course/blob/main/course/lessons/08-bsl-flow/lesson.md"
   }
 }
