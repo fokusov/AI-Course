@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "title": "Архитектор агентной разработки в 1С",
+  "files": [
+    "README.md",
+    "program.md",
+    "factory.md",
+    "practice.md",
+    "lab.md",
+    "accounting-contract.md",
+    "lessons/01-substitute-shipment/lesson.md",
+    "lessons/01-substitute-shipment/rules.md",
+    "lessons/01-substitute-shipment/fixtures.md",
+    "lessons/02-kit-assembly/lesson.md",
+    "lessons/02-kit-assembly/rules.md",
+    "lessons/02-kit-assembly/fixtures.md",
+    "lessons/03-last-item-race/lesson.md",
+    "lessons/03-last-item-race/scenarios.md",
+    "sources.md"
+  ],
+  "externalDocuments": {
+    "course/index.md": "https://github.com/fokusov/AI-Course/blob/main/course/index.md",
+    "course/getting-started/lesson.md": "https://github.com/fokusov/AI-Course/blob/main/course/getting-started/lesson.md"
+  }
+}

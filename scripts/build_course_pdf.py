@@ -71,9 +71,9 @@ def reading_order(paths: list[str]) -> list[str]:
     return [p for p in preferred if p in paths] + [p for p in paths if p not in preferred]
 
 
-def pandoc_ast(source: str) -> list[dict]:
+def pandoc_ast(source: str, root: Path = COURSE) -> list[dict]:
     result = subprocess.run(
-        ["pandoc", "--from=gfm", "--to=json", str(COURSE / source)],
+        ["pandoc", "--from=gfm", "--to=json", str(root / source)],
         capture_output=True,
         text=True,
         encoding="utf-8",
@@ -166,11 +166,22 @@ class Heading(Paragraph):
         self.key, self.level, self.outline = key, level, outline
         self.file_key = None
 
+    def draw(self):
+        super().draw()
+        self.destination_position = (self.canv.getPageNumber() - 1,
+                                     self.canv.absolutePosition(0, self.height)[1])
+        self.canv.bookmarkHorizontal(self.key, 0, self.height)
+        if self.file_key:
+            self.canv.bookmarkHorizontal(self.file_key, 0, self.height)
+
 
 class CourseDoc(BaseDocTemplate):
-    def __init__(self, path: Path):
+    def __init__(self, path: Path, title: str = "ИИ-разработка в 1С", with_toc: bool = False):
         super().__init__(str(path), pagesize=A4, leftMargin=49, rightMargin=49,
-                         topMargin=51, bottomMargin=49, title="ИИ-разработка в 1С")
+                         topMargin=51, bottomMargin=49, title=title)
+        self.course_title = title
+        self.with_toc = with_toc
+        self.destinations = {}
         self.addPageTemplates(PageTemplate(id="course", frames=[Frame(
             self.leftMargin, self.bottomMargin, self.width, self.height,
             leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0,
@@ -180,15 +191,18 @@ class CourseDoc(BaseDocTemplate):
         canvas.saveState()
         canvas.setFont("Course", 8)
         canvas.setFillColor(colors.HexColor("#607080"))
-        canvas.drawString(self.leftMargin, 29, "ИИ-разработка в 1С")
+        canvas.drawString(self.leftMargin, 29, self.course_title)
         canvas.drawRightString(A4[0] - self.rightMargin, 29, str(doc.page))
         canvas.restoreState()
 
     def afterFlowable(self, flowable):
         if isinstance(flowable, Heading):
-            self.canv.bookmarkPage(flowable.key)
+            position = flowable.destination_position
+            self.destinations[flowable.key] = position
             if flowable.file_key:
-                self.canv.bookmarkPage(flowable.file_key)
+                self.destinations[flowable.file_key] = position
+                if self.with_toc:
+                    self.notify('TOCEntry', (0, flowable.text, self.page, flowable.file_key))
             if flowable.outline:
                 self.canv.addOutlineEntry(flowable.outline, flowable.key, level=flowable.level)
 
